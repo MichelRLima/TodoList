@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import './App.css';
-
-
+import { BsTrash, BsBookmarkCheck, BsBookmarkCheckFill, BsFillBookmarkCheckFill } from 'react-icons/bs'
 
 
 
@@ -47,10 +46,10 @@ const removerTodo = (index) =>{
         <div className="ContainerTarefa">
         <input type="text" 
         placeholder="Digite sua tarefa" 
-        value={inputValue}
-        onChange={(e) => setInputValue(e.target.value)}></input>
+        value={inputValue} 
+        onChange={(e) => setInputValue(e.target.value)}></input> {/* toda vez que for alterado, o valor sera setado*/ }
 
-        <input type="submit" value="Criar tarefa" onClick={addTodo}></input>
+        <input type="submit" value="Criar tarefa" className="CriarTarefa" onClick={addTodo}></input>
         </div>
         <div>
           {todos.map((todo, index) =>(
@@ -60,9 +59,9 @@ const removerTodo = (index) =>{
              <h3 style={{textDecoration: todo.completed ? "line-through" : "" }}>{todo.task}</h3> {/* foi adicionado um estilo para quando for completado a tarefa */}
               
               <div className="acoes">
-                <button onClick={() => removerTodo(index)}>Remover</button>{/* botao para acionar a funcao removerTodo */}
+                <span onClick={() => removerTodo(index)}><BsTrash  /></span>{/* botao para acionar a funcao removerTodo */}
 
-                <button onClick={() => completeTodo(index)}>Concluir</button>{/* botao para acionar a funcao CompleteTodo*/}
+                <span onClick={() => completeTodo(index)}>{todo.completed===true ? <BsFillBookmarkCheckFill /> : <BsBookmarkCheck />}</span>{/* botao para acionar a funcao CompleteTodo*/}
               </div>
               
               </div> 

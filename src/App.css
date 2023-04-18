@@ -3,16 +3,18 @@
 }
 
 .titulo{
-  width: 100%;
+  margin: 10px auto;
+  width: 80%;
   height: 100px;
   background-color: #efefef;
+  border-radius: 15px;
 }
 
 .ContainerTodoList{
-  width: 40%;
+  width: 80%;
   margin: 0 auto;
-  background-color: blue;
-  border-radius: 3%;
+  background-color:#162e54;
+  border-radius: 15px;
 
 }
 
@@ -26,19 +28,42 @@
   border: 1px solid black;
   width: 90%; /* define a largura da div */
   height: 150px; /* define a altura da div */
+  border-radius: 15px;
 
 
 }
 
+.ContainerTodoList .CriarTarefa{
+  width: 30%;
+  cursor: pointer;
+  height: 30px;
+  border-radius: 10px;
+  background-color: white;
+}
+
 .ContainerTodoList h3{
-  color: white;
+  color: #efefef;
   word-wrap: break-word; /* faz com que o texto seja quebrado em várias linhas */
+  font-family: 'Dongle';
+  font-size: 30px;
   
 }
 
 .ContainerTodoList input[type=text]{
   width: 90%;
+  height: 30px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Dongle';
+  font-size: 30px;
+
+
 }
-.ContainerTodoList .acoes button{
-  margin: auto 2px;
+.ContainerTodoList .acoes span svg{
+  width: 25px;
+  height: 25px;
+  margin: -10px 40px;
+  cursor: pointer;
+  
+  
 }
