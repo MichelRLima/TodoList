@@ -61,7 +61,7 @@ const removerTodo = (index) =>{
               <div className="acoes">
                 <span onClick={() => removerTodo(index)}><BsTrash  /></span>{/* botao para acionar a funcao removerTodo */}
 
-                <span onClick={() => completeTodo(index)}>{todo.completed==true ? <BsFillBookmarkCheckFill /> : <BsBookmarkCheck />}</span>{/* botao para acionar a funcao CompleteTodo*/}
+                <span onClick={() => completeTodo(index)}>{todo.completed===true ? <BsFillBookmarkCheckFill /> : <BsBookmarkCheck />}</span>{/* botao para acionar a funcao CompleteTodo*/}
               </div>
               
               </div> 
