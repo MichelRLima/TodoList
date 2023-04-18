@@ -18,7 +18,7 @@ function addTodo (){ //funcao para adicionar tarefa no array
 
 const completeTodo = (index) =>{ //funcao para marcar como completa a tarefa
   const finishTodos = [...todos] //pegando todas as tarefas de "todos"
-  if(finishTodos[index].completed == false){
+  if(finishTodos[index].completed === false){
     
     finishTodos[index].completed = true; //adicionado como True no index da tarefa marcada como completada
   }else{
