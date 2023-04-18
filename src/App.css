@@ -41,6 +41,11 @@
   background-color: white;
 }
 
+.ContainerTodoList h2{
+  
+  font-size: 30px;
+}
+
 .ContainerTodoList h3{
   color: #efefef;
   word-wrap: break-word; /* faz com que o texto seja quebrado em várias linhas */
@@ -58,6 +63,11 @@
   font-size: 30px;
 
 
+}
+
+.ContainerTodoList input[type=submit]{
+  font-family: 'Dongle';
+  font-size: 20px;
 }
 .ContainerTodoList .acoes span svg{
   width: 25px;
