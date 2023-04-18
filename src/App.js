@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './App.css';
-import { BsTrash, BsBookmarkCheck, BsBookmarkCheckFill, BsFillBookmarkCheckFill } from 'react-icons/bs'
+import { BsTrash, BsBookmarkCheck, BsFillBookmarkCheckFill } from 'react-icons/bs'
 
 
 
