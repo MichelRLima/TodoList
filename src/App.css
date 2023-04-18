@@ -2,37 +2,39 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.titulo{
+  width: 100%;
+  height: 100px;
+  background-color: #efefef;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ContainerTodoList{
+  width: 40%;
+  margin: 0 auto;
+  background-color: blue;
+  border-radius: 3%;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.ContainerTarefa input{
+  margin: 20px auto;
+  display: block;
+}
+
+.ContainerTodoList .Todo{
+  margin: 5% auto;
+  border: 1px solid black;
+  width: 90%; /* define a largura da div */
+  height: 150px; /* define a altura da div */
+
+
+}
+
+.ContainerTodoList h3{
   color: white;
+  word-wrap: break-word; /* faz com que o texto seja quebrado em várias linhas */
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ContainerTodoList .acoes button{
+  margin: auto 2px;
 }
