@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import './App.css';
 import { BsTrash, BsBookmarkCheck, BsFillBookmarkCheckFill } from 'react-icons/bs'
 
@@ -7,6 +7,24 @@ import { BsTrash, BsBookmarkCheck, BsFillBookmarkCheckFill } from 'react-icons/b
 function App() {
 const [todos, setTodos] = useState([]);
 const [inputValue, setInputValue] = useState ("")
+
+// useEffect para buscar a lista de tarefas previamente armazenada no localStorage
+useEffect(() => {
+  const storedTodos = JSON.parse(localStorage.getItem("todoss"));
+  console.log(storedTodos.length)
+  if (storedTodos.length >0 ) {
+    setTodos(storedTodos);
+   
+  }
+}, []);
+
+// useEffect para armazenar a lista de tarefas no localStorage sempre que ela for atualizada
+useEffect(() => {
+  localStorage.setItem("todoss", JSON.stringify(todos));
+
+}, [todos]);
+
+
 
 function addTodo (){ //funcao para adicionar tarefa no array
     if (inputValue !== ""){
