@@ -33,8 +33,12 @@
 .ContainerTodoList h3{
   color: white;
   word-wrap: break-word; /* faz com que o texto seja quebrado em várias linhas */
+  
 }
 
+.ContainerTodoList input[type=text]{
+  width: 90%;
+}
 .ContainerTodoList .acoes button{
   margin: auto 2px;
 }
