@@ -27,7 +27,7 @@
   margin: 5% auto;
   border: 1px solid black;
   width: 90%; /* define a largura da div */
-  height: 150px; /* define a altura da div */
+ 
   border-radius: 15px;
 
 
@@ -72,7 +72,7 @@
 .ContainerTodoList .acoes span svg{
   width: 25px;
   height: 25px;
-  margin: -10px 40px;
+  margin: 10px 40px;
   cursor: pointer;
   
   
