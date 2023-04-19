@@ -11,8 +11,9 @@ const [inputValue, setInputValue] = useState ("")
 // useEffect para buscar a lista de tarefas previamente armazenada no localStorage
 useEffect(() => {
   const storedTodos = JSON.parse(localStorage.getItem("todos"));
+  let tArray = storedTodos.length
 
-  if (storedTodos.length >0 ) {
+  if (tArray > 0 ) {
     setTodos(storedTodos);
    
   }
