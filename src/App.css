@@ -5,7 +5,7 @@
 .titulo{
   margin: 10px auto;
   width: 80%;
-  height: 100px;
+ 
   background-color: #efefef;
   border-radius: 15px;
 }
@@ -24,7 +24,7 @@
 }
 
 .ContainerTodoList .Todo{
-  margin: 5% auto;
+  margin: 15px auto;
   border: 1px solid black;
   width: 90%; /* define a largura da div */
  
@@ -33,17 +33,13 @@
 
 }
 
-.ContainerTodoList .CriarTarefa{
-  width: 30%;
-  cursor: pointer;
-  height: 30px;
-  border-radius: 10px;
-  background-color: white;
-}
+
 
 .ContainerTodoList h2{
-  font-family: 'Dongle Light 300', sans-serif;
-  font-size: 25px;
+  font-family: 'Dongle';
+  font-size: 50px;
+  border-bottom: 1px solid #efefef;
+  color: rgb(14, 11, 11);
 }
 
 .ContainerTodoList h3{
@@ -74,6 +70,7 @@
   height: 25px;
   margin: 10px 40px;
   cursor: pointer;
+  color: black;
   
   
 }

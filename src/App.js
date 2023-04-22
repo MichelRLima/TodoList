@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import './App.css';
 import { BsTrash, BsBookmarkCheck, BsFillBookmarkCheckFill } from 'react-icons/bs'
-
-
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Button from 'react-bootstrap/Button';
 function App() {
 const [todos, setTodos] = useState([]);
 const [inputValue, setInputValue] = useState ("")
+
 
 
 
@@ -39,19 +39,18 @@ const removerTodo = (index) =>{
     <div className="App">
 
       <div className="titulo">
-        <h1>Todo List</h1>
         <p>Criado por <a target="_blanck" href="https://www.linkedin.com/in/michel-rocha-01b550210/">Michel Rocha</a> em React</p>
       </div>
 
       <div className="ContainerTodoList">
-        <h2>Qual será sua tarefa?</h2>
+        <h2>Todo List</h2>
         <div className="ContainerTarefa">
         <input type="text" 
         placeholder="Digite sua tarefa" 
         value={inputValue} 
         onChange={(e) => setInputValue(e.target.value)}></input> {/* toda vez que for alterado, o valor sera setado*/ }
 
-        <input type="submit" value="Criar tarefa" className="CriarTarefa" onClick={addTodo}></input>
+        <Button type="submit" value="Criar" onClick={addTodo} variant="secondary">Criar</Button>{' '}
         </div>
         <div>
           {todos.map((todo, index) =>(
