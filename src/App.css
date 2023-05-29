@@ -19,9 +19,15 @@
 
 }
 
-.ContainerTarefa input{
+.ContainerTarefa textarea{
   margin: 50px auto;
   display: block;
+  width: 90%;
+  height:55px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 30px;
+
 }
 
 .ContainerTarefa button{
@@ -57,17 +63,7 @@
   
 }
 
-.ContainerTodoList input[type=text]{
-  width: 90%;
-  height:40px;
-  border-radius: 10px;
-  text-align: center;
-  font-family: 'Dongle';
-  font-size: 30px;
-  
 
-
-}
 
 .ContainerTodoList input[type=submit]{
   font-family: 'Dongle';

@@ -45,10 +45,11 @@ const removerTodo = (index) =>{
       <div className="ContainerTodoList">
         <h2>Todo List</h2>
         <div className="ContainerTarefa">
-        <input type="text" 
+          <textarea type="text" 
         placeholder="Digite sua tarefa" 
         value={inputValue} 
-        onChange={(e) => setInputValue(e.target.value)}></input> {/* toda vez que for alterado, o valor sera setado*/ }
+        onChange={(e) => setInputValue(e.target.value)}></textarea>
+        
 
         <Button type="submit" value="Criar" onClick={addTodo} variant="secondary">Criar</Button>{' '}
         </div>
